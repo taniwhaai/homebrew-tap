@@ -1,7 +1,7 @@
 class Arai < Formula
   desc "AI coding rules that actually work — enforce instruction files via hooks"
   homepage "https://arai.taniwha.ai"
-  version "1.2.0"
+  version "1.2.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   livecheck do
@@ -12,22 +12,22 @@ class Arai < Formula
   on_macos do
     on_arm do
       url "https://github.com/taniwhaai/arai/releases/download/v#{version}/arai-darwin-aarch64", using: :nounzip
-      sha256 "197a19aa5147c721abc8d374009ff9fa5104ea5718618dcff9dfb2b77fb8a8b2"
+      sha256 "aa75362db0b720cbfa2ca74089467ac3a05b991b11ec37e06c1b2ebb4c999e6c"
     end
     on_intel do
       url "https://github.com/taniwhaai/arai/releases/download/v#{version}/arai-darwin-x86_64", using: :nounzip
-      sha256 "d6621fb4e24a21ea49d60228899f10d53e6f67acf0a623fc39b72251c8162b53"
+      sha256 "2edbd8071a57ce42ddf3557570c23ca3d190cf94583afde3add681a231070330"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/taniwhaai/arai/releases/download/v#{version}/arai-linux-aarch64", using: :nounzip
-      sha256 "ad5558f9a3bd8683e2babc6e02a16c18395f05e21b715db140534d6066eb0be3"
+      sha256 "6d74a0c8c8488e2ca260c018038fea241a0c7bf1dd030d14ccb213d8cbdecb3a"
     end
     on_intel do
       url "https://github.com/taniwhaai/arai/releases/download/v#{version}/arai-linux-x86_64", using: :nounzip
-      sha256 "6219d6955c3cdc40a3c07dd4fa0d598fd392ec0f37a3d58a2c6378353be54ede"
+      sha256 "f5f25356d08e5d2e6b957ab2c7336efd900db05fb43be70299ce889c4c5a0b69"
     end
   end
 
